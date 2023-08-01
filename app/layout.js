@@ -8,7 +8,6 @@ import Modal from './components/Modal';
 import { usePathname } from 'next/navigation'
 import AOS from 'aos'
 import "aos/dist/aos.css";
-import Head from 'next/head'
 
 export default function RootLayout({ children }) {
   const [openModal, setModal] = useState({
@@ -39,10 +38,8 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
-      </style>
-      <Head>
         <title>OliBot - Grow Your Busienss With AI</title>
-      </Head>
+      </style>
       <body>
         {path !== '/platform' && <Header setModal={setModal} />}
         {openModal.open == true && openModal.purpose !== null && path !== '/platform' && <Modal setModal={setModal} purpose={openModal.purpose} />}
