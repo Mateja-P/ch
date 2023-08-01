@@ -208,7 +208,7 @@ export default function Home() {
 
       {/* 4 section */}
       <div className="my-[350px]">
-        <div data-aos='fade-down' data-aos-delay="600" className="w1 text-center flex flex-col items-center">
+        <div data-aos='fade-down' data-aos-delay="200" className="w1 text-center flex flex-col items-center">
           <h1 className="text-[45px] sm:text-[35px] font-semibold mb-10">
             Our Clients
           </h1>
@@ -236,7 +236,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div data-aos='fade-up' data-aos-delay="600" className="mt-[150px] mb-[80px] font-medium text-[20px]">What our clients say about us</div>
+          <div data-aos='fade-up' data-aos-delay="200" className="mt-[150px] mb-[80px] font-medium text-[20px]">What our clients say about us</div>
         </div>
         {/* <div className="flex justify-between w-[2400px] gap-10 relative translate-x-[-100px]"> */}
         <div className="flex md:flex-col justify-between gap-10 relative">
